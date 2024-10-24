@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Pagina Web html</title>
+</head>
+<body>
+    <!-- ul sirve para insertar una lista no ordenada -->
+    <ul>
+        <li> elemento 1 </li>
+        <li> elemento 2 </li>
+        <li> elemento 3 </li>
+    </ul>
+    <!-- ul sirve para insertar una lista ordenada -->
+    <ol>
+        <li value="10"> Elemento 1 </li>
+        <li> elemento 2 </li>
+        <li> 
+            <ol>
+                <li style="list-style-type: upper-alpha;"> elemento 2.1 </li>
+                <li style="list-style-type: upper-alpha;"> elemento 2.2 </li>
+                <li style="list-style-type: upper-alpha;"> elemento 2.3 </li>
+            </ol>
+        </li>
+    </ol>    
+
+    <!-- H1 es para los titulos solo hay hasta 6 1 mas grande 6 mas pequeño -->
+    <h1>Hola Mundo</h1>
+    <!-- P sirve para los parrafos -->
+    <p> Parrafos de prueba en la pagina web </p>
+    <!-- hr es para generar una linea de espacio entre una seccion y otra -->
+    <hr>
+    <h1> Segundo titulo de la pagina</h1>
+    <p> En este parrafo se va a utilizar la funcion <span style="color:purple">span</span> 
+    <br>para seleccionar y cambiar el color de un texto</p>
+    <!-- a sirve para insertar un link y abrirlo en la misma pestaña -->
+    <a href="https://google.com.co">Ir a google </a>
+    <!-- a sirve para insertar un link y abrilo en otra pestaña -->
+    <br>
+    <a target ="_blank" href="https://youtube.com.co" target="_blank">Ir a youtube </a>
+    <br>
+    <!-- img sirve para insertar una imagen -->
+    <!-- width sirve para cambiar el tamaño del ancho y mantiene el aspecto
+    y height sirve para cambiar el tamaño del alto y mantiene el aspecto pero si pones los dos 
+    puedes poner un tamaño diferente -->
+    <img src="IMG/Goku.png" width="200" />
+    
+    <!-- form sirve para insertar un formulario -->
+    <!-- label es para el titulo de un input -->
+    <!-- input sirve para insertar una caja de texto, un check box o basicamente un input para el usuario
+    type sirve para indicar el tipo de input
+    el name es como lo recibe la base de datos al dato ingresado osea la key o llave 
+    y el id es para identificarlo -->
+    <form action="/formulario" method="post">
+        <label for="nombre">Nombre</label>
+        <input value ="valor por defecto" type="text" name="nombre" id="nombre" placeholder="Escriba su nombre" />
+        <br>
+        <label for="apellido">Apellido</label>
+        <input value ="valor por defecto" type="text" name="apellido" id="apellido" placeholder="Escriba su apellido">
+        <br>
+        <label for="comentario">Comentario</label>
+        <br>
+        <!-- textarea sirve para insertar un area de texto -->
+        <textarea name="comentario" id="comentario" placeholder="Escriba su comentario" cols="20" rows="10"> Valor por defecto</textarea>
+        <br>
+        <!-- Es mejor usar button para uso de botones para el uso de la pagina ya sea reset para devolver los valores
+        por defecto submit para enviar los datos registrados y boton nomas como boton que se le especifica
+        el comportamiento con javascript y ademas son mas personalizables
+        se puede poner imagenes etc -->
+
+        <button type="submit">tipo submit</button>
+        <button type="button">tipo button</button>
+        <button type="reset">tipo reset</button>
+
+    </form>
+
+</body>
+</html>
