@@ -1,10 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+        <!-- style sirve para insertar estilos primero se ingresan los datos a los cuales les aplicas los estilos -->
+    <style>
+        table, th, td {
+            Border: 1px solid black;
+        }
+    </style>
 
     <title>Pagina Web html</title>
 </head>
-<body>
+<body> 
+        <!-- thead sirve para insertar la cabecera de la tabla -->
+    <table style="width: 400px">
+        <thead>
+            <tr>
+                <th> Producto</th> <th> Precio</th> <th> Cantidad</th>
+            </tr>
+        </thead>
+        <!-- tbody sirve para insertar el cuerpo de la tabla -->
+        <tbody>
+            <tr>
+                <td> Lentes </td> <td> 1500 </td> </td> <td> 2 </td>
+            </tr>
+            <tr>
+                <td> gorras de paja </td> <td> 2500 </td> </td> <td> 2 </td>
+            </tr>
+            <tr>
+                <td> gorras de paja blancas y rojas </td> <td> 2500 </td> </td> <td> 2 </td>
+            </tr>
+        </tbody>
+        <!-- tfoot sirve para insertar el pie de la tabla -->
+        <tfoot>
+            <tr>
+                <td> Total </td> <td> 5000 </td> </td> <td> 6 </td>
+            </tr>
+        </tfoot>
+    </table>
     <!-- ul sirve para insertar una lista no ordenada -->
     <ul>
         <li> elemento 1 </li>
